@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
   <script src="https://kit.fontawesome.com/ec56364b1f.js" crossorigin="anonymous"></script>
   <title>Booki</title>
 </head>
@@ -36,17 +37,33 @@
         <input class="input-recherche" type="text" name="recherche" placeholder="Marseille, France">
         <input class="btn-recherche-submit" type="submit" value="Rechercher"></input>
       </form>
+
     </div>
 
     <div class="filtres">
       <h2 class="titre-filtres">Filtres</h2>
-      <div class="filtres-contenu">Economique</div>
-      <div class="filtres-contenu">Familial</div>
-      <div class="filtres-contenu">Romantique</div>
-      <div class="filtres-contenu">Animaux autorisé</div>
+      <div class="filtres-contenu">
+        <div class="filter-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+        <p class="filter-text">Economique</p>
+      </div>
+      <div class="filtres-contenu">
+        <div class="filter-icon"><i class="fa-solid fa-child-reaching"></i></div>
+        <p class="filter-text">Familial</p>
+      </div>
+      <div class="filtres-contenu">
+        <div class="filter-icon"><i class="fa-solid fa-heart"></i></div>
+        <p class="filter-text">Romantique</p>
+      </div>
+      <div class="filtres-contenu">
+        <div class="filter-icon"><i class="fa-solid fa-dog"></i></div>
+        <p class="filter-text">Animaux autorisés</p>
+      </div>
     </div>
 
-    <div class="resultats-recherche">Plus de 500 logements sont disponibles dans cette ville</div>
+    <div class="resultats-recherche">
+      <div class="results-icon"><i class="fa-solid fa-info"></i></div>
+      <div>Plus de 500 logements sont disponibles dans cette ville</div>
+    </div>
 
     <div class="container-principal">
       <div class="cadre cadre-hebergements" id="hebergements">
