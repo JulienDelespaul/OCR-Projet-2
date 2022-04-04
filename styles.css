@@ -46,8 +46,9 @@ header {
 	justify-content: space-between;
 	list-style: none;
 	align-items: center;
+
 	gap: 60px;
-	margin-right: 60px;
+	margin-right: 30px;
 }
 
 .lien-nav,
@@ -62,7 +63,6 @@ header {
 .lien-nav:active,
 .lien-nav:hover {
 	color: #0065fc;
-	cursor: pointer;
 	border-top: 2px solid #0065fc;
 }
 
