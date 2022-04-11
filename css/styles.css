@@ -49,6 +49,11 @@ main {
 	width: 100%;
 }
 
+a {
+	text-decoration: none;
+	color: #000;
+}
+
 .logo {
 	height: 30px;
 }
@@ -124,6 +129,7 @@ main {
 .search-input {
 	height: 100%;
 	width: 160px;
+	font-size: 12px;
 	padding-left: 10px;
 	border: none;
 	border-top: 1px solid #f2f2f2;
@@ -182,9 +188,12 @@ main {
 	justify-content: center;
 }
 
-.filters-content:hover {
+.filters-content:hover,
+.accommodation-card:hover,
+.most-popular-card:hover,
+.attractions-card:hover {
 	background-color: #f8faff;
-	box-shadow: 0 10px 13px -7px #000000, 0 19px 17px 14px rgba(0, 0, 0, 0.02);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	transform: translateY(-5px);
 	cursor: pointer;
 }
@@ -243,7 +252,7 @@ main {
 
 .accommodation-container-title {
 	font-size: 16px;
-	padding : 20px 0;;
+	padding: 20px 0;
 }
 
 .accommodation-card {
@@ -252,7 +261,7 @@ main {
 	width: 30%;
 	height: 135px;
 	padding: 3px;
-	box-shadow: 0 10px 13px -7px #000000, 0 19px 17px 14px rgba(0, 0, 0, 0.02);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .accommodation-card-image-container {
@@ -297,7 +306,7 @@ main {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
-	cur
+	cursor: pointer;
 }
 
 .most-popular-container {
@@ -330,7 +339,7 @@ main {
 	flex-direction: row;
 	background-color: #fff;
 	padding: 3px;
-	box-shadow: 0 10px 13px -7px #000000, 0 19px 17px 14px rgba(0, 0, 0, 0.02);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .most-popular-card-image-container {
@@ -386,7 +395,7 @@ main {
 
 .attractions-card {
 	border-radius: 15px;
-	box-shadow: 0 10px 13px -7px #000000, 0 19px 17px 14px rgba(0, 0, 0, 0.02);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
@@ -469,13 +478,56 @@ footer h4 {
 	font-size: 11px;
 }
 
+/* tablet responsive */
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+	.main-container {
+		padding: 40px;
+		flex-direction: column;
+	}
+
+	.accommodation-container {
+		order: 2;
+		width: 100%;
+		margin-top: 40px;
+		padding-top: 10px;
+	}
+
+	.accommodation-card {
+		width: 48%;
+		height: 200px;
+	}
+
+	.most-popular-container {
+		order: 1;
+		width: 100%;
+	}
+
+	.most-popular-content-container {
+		flex-direction: row;
+		justify-content: space-between;
+		row-gap: 20px;
+	}
+
+	.most-popular-card {
+		width: 30%;
+		height: 150px;
+	}
+
+	.attractions-content-container {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.attractions-column {
+		width: 48%;
+		height: 300px;
+	}
+}
+
 /* mobile responsive */
 
 @media screen and (max-width: 768px) {
-	body {
-		max-width: 768px;
-	}
-
 	header {
 		height: 260px;
 		width: 100%;
@@ -531,12 +583,12 @@ footer h4 {
 		height: 100px;
 		border-radius: 35px;
 	}
-	
+
 	.location-icon {
 		width: 16%;
 		font-size: 44px;
 	}
-	
+
 	.search-form {
 		height: 100%;
 		width: 84%;
@@ -544,7 +596,7 @@ footer h4 {
 		justify-content: center;
 		border-top: 3px solid #f2f2f2;
 		border-bottom: 3px solid #f2f2f2;
-	z-index: 0;
+		z-index: 0;
 	}
 
 	.desktop {
@@ -559,11 +611,11 @@ footer h4 {
 	.search-input {
 		width: 82%;
 		padding-left: 30px;
+		font-size: 36px;
 	}
 
 	.search-input::placeholder {
 		font-size: 36px;
-
 	}
 
 	.search-button-submit {
@@ -655,7 +707,7 @@ footer h4 {
 
 	.most-popular-container-title {
 		font-size: 46px;
-		padding : 0;
+		padding: 0;
 	}
 
 	.most-popular-content-container {
@@ -732,36 +784,36 @@ footer h4 {
 	.attractions-container {
 		padding: 36px 40px;
 	}
-	
+
 	.attractions-title {
 		font-size: 44px;
 		padding-bottom: 50px;
 	}
-	
+
 	.attractions-content-container {
 		flex-direction: column;
 		gap: 40px;
 	}
-	
+
 	.attractions-column {
 		width: 688px;
 		height: auto;
 		justify-content: flex-start;
 		gap: 40px;
 	}
-	
+
 	.attractions-card {
 		border-radius: 35px;
-		height : 390px;
+		height: 390px;
 	}
-	
+
 	.attractions-card-text {
 		height: 120px;
 		padding-top: 34px;
 		padding-left: 34px;
 		font-size: 28px;
 	}
-	
+
 	footer {
 		flex-direction: column;
 		padding: 80px 60px;
@@ -777,15 +829,13 @@ footer h4 {
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
-	
-footer h4 {
-	padding-bottom: 20px;
-}
 
-	
+	footer h4 {
+		padding-bottom: 20px;
+	}
+
 	.list-nav > li {
 		line-height: 70px;
 		font-size: 34px;
 	}
-
 }
