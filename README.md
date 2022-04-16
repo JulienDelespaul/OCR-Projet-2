@@ -7,7 +7,7 @@ Projet réalisé dans le cadre de la formation développeur web d'OpenClassrooms
 
 Containtes techniques
 
-- uniquement CSS et HTML, pas de framewor
+- uniquement CSS et HTML, pas de framework
 - dispositon en flex, pas de grid
 - margins et paddings en pixels,
 - widths en pourcentages
