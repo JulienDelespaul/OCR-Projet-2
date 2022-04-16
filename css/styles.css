@@ -1,20 +1,24 @@
 /*
 
----- Media queries ----
-bureau > 992px
-tablette > 768px
+---- Media queries breakpoints ----
+desktop > 992px
+tablet > 768px, < 992px
 mobile < 768px
 
 ---- Colors ----
-bleu : #0065FC
-bleu clair : #DEEBFF
-gris background : #F2F2F2
+blue : #0065FC
+lightblue : #DEEBFF
+grey (background) : #F2F2F2
 
 ---- Font ----
 Raleway
 
-pixels pour margin, paddings
-pourcentages pour width
+--- technical specificities ---
+
+- only flex, no grid
+- no framework
+- pixels for margins and paddings
+- percentages for widths
 
 */
 
@@ -81,7 +85,7 @@ header {
 .nav-link,
 .nav-link:link,
 .nav-link:visited {
-	font-size: 12px;
+	font-size: 13px;
 	cursor: pointer;
 	padding: 25px;
 }
@@ -173,6 +177,10 @@ header {
 	font-weight: bold;
 }
 
+.filters-title {
+	margin-top: 16px;
+}
+
 .filters-content {
 	height: 36px;
 	display: flex;
@@ -181,7 +189,7 @@ header {
 	border: 2px solid #d9d9d9;
 	border-radius: 25px;
 	border-left: none;
-	/* margin-top: 16px; */
+	margin-top: 16px;
 	transition: 0.1s ease-in-out;
 }
 .filter-icon {
